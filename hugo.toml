@@ -8,10 +8,7 @@ theme = "barks"
     extended = true
     min = "0.128.0"
 
-[params.author]
-name = "Keru Chen"
-headline = "PhD Student - ASU ECEE"
-bio = "First-year PhD student in Electrical, Computer, and Energy Engineering at Arizona State University, advised by Shaofeng Zou. My research interests include reinforcement learning, large language models, and AI for healthcare. I received my B.Eng. in Automation from Xi'an Jiaotong University."
+# ---------------- Social links (footer icons) ----------------
 
 [[params.social]]
 name = "Email"
@@ -22,8 +19,13 @@ name = "GitHub"
 url = "https://github.com/CLIVERCHEN"
 
 [[params.social]]
-name = "Advisor"
-url = "https://sites.google.com/view/szou/home?authuser=0"
+name = "Google Scholar"
+url = "https://scholar.google.com/citations?user=W0LexmIAAAAJ&hl=en"
+
+[[params.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/keru-chen-23ba0128a/"
+
 
 [menu]
 
