@@ -1,6 +1,6 @@
 baseURL = "https://CLIVERCHEN.github.io/"
 languageCode = "en-us"
-title = "Cliver Chen"
+title = "Keru Chen"
 theme = "barks"
 
 [module]
@@ -9,7 +9,7 @@ theme = "barks"
     min = "0.128.0"
 
 [params.author]
-name = "Cliver Chen"
+name = "Keru Chen"
 headline = "PhD Student - ASU ECEE"
 bio = "First-year PhD student in Electrical, Computer, and Energy Engineering at Arizona State University, advised by Shaofeng Zou. My research interests include reinforcement learning, large language models, and AI for healthcare. I received my B.Eng. in Automation from Xi'an Jiaotong University."
 
@@ -24,3 +24,30 @@ url = "https://github.com/CLIVERCHEN"
 [[params.social]]
 name = "Advisor"
 url = "https://sites.google.com/view/szou/home?authuser=0"
+
+[menu]
+
+[[menu.main]]
+name = "Research"
+url = "/research/"
+weight = 1
+
+[[menu.main]]
+name = "Publications"
+url = "/publications/"
+weight = 2
+
+[[menu.main]]
+name = "Experience"
+url = "/experience/"
+weight = 3
+
+[[menu.main]]
+name = "CV"
+url = "/cv/"
+weight = 4
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 5

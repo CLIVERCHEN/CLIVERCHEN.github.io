@@ -1,15 +1,14 @@
 ---
-title: "Cliver Chen"
+title: "Keru Chen"
 layout: landing_page
 image: "/img/avatar.jpg"
 ---
 
-I am a first-year PhD student in Electrical, Computer, and Energy Engineering (ECEE) at Arizona State University, advised by Prof. Shaofeng Zou.
+I am a first-year PhD student in Electrical, Computer, and Energy Engineering at [Arizona State University](https://www.asu.edu/), advised by [Prof. Shaofeng Zou](https://sites.google.com/view/szou/home).
 
-My research interests include **reinforcement learning (RL)**, **large language models (LLMs)**, and **AI for healthcare**.
+My research focuses on reinforcement learning, large language models, and their applications to healthcare, with particular interest in safe and efficient reinforcement learning and constrained decision-making.
 
-Previously, I received my B.Eng. in **Automation** from **Xi’an Jiaotong University (XJTU)**.
+Previously, I received my B.Eng. in Automation from [Xi’an Jiaotong University](https://www.xjtu.edu.cn/).
 
 - Email: [kchen234@asu.edu](mailto:kchen234@asu.edu)
 - GitHub: [CLIVERCHEN](https://github.com/CLIVERCHEN)
-- Advisor: [Shaofeng Zou](https://sites.google.com/view/szou/home?authuser=0)
