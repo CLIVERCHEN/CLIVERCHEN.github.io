@@ -8,25 +8,6 @@ theme = "barks"
     extended = true
     min = "0.128.0"
 
-# ---------------- Social links (footer icons) ----------------
-
-[[params.social]]
-name = "Email"
-url = "mailto:kchen234@asu.edu"
-
-[[params.social]]
-name = "GitHub"
-url = "https://github.com/CLIVERCHEN"
-
-[[params.social]]
-name = "Google Scholar"
-url = "https://scholar.google.com/citations?user=W0LexmIAAAAJ&hl=en"
-
-[[params.social]]
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/keru-chen-23ba0128a/"
-
-
 [menu]
 
 [[menu.main]]
@@ -53,3 +34,32 @@ weight = 4
 name = "Contact"
 url = "/contact/"
 weight = 5
+
+[params]
+
+[[params.social]]
+name = "Email"
+url = "mailto:kchen234@asu.edu"
+class = "fa-solid fa-envelope"
+weight = 1
+
+[[params.social]]
+name = "GitHub"
+url = "https://github.com/CLIVERCHEN"
+class = "fa-brands fa-github"
+weight = 2
+
+[[params.social]]
+name = "Google Scholar"
+url = "https://scholar.google.com/citations?user=W0LexmIAAAAJ&hl=en"
+class = "fa-solid fa-graduation-cap"
+weight = 3
+
+[[params.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/keru-chen-23ba0128a/"
+class = "fa-brands fa-linkedin"
+weight = 4
+
+[params.footer]
+show_footer = true

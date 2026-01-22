@@ -9,6 +9,3 @@ I am a first-year PhD student in Electrical, Computer, and Energy Engineering at
 My research focuses on reinforcement learning, large language models, and their applications to healthcare, with particular interest in safe and efficient reinforcement learning and constrained decision-making.
 
 Previously, I received my B.Eng. in Automation from [Xi’an Jiaotong University](https://www.xjtu.edu.cn/).
-
-- Email: [kchen234@asu.edu](mailto:kchen234@asu.edu)
-- GitHub: [CLIVERCHEN](https://github.com/CLIVERCHEN)
