@@ -36,6 +36,8 @@ url = "/contact/"
 weight = 5
 
 [params]
+customCSS = ["css/custom.css"]
+
 
 [[params.social]]
 name = "Email"
@@ -61,5 +63,3 @@ url = "https://www.linkedin.com/in/keru-chen-23ba0128a/"
 class = "fa-brands fa-linkedin"
 weight = 4
 
-[params.footer]
-show_footer = true

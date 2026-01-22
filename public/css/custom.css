@@ -1,0 +1,33 @@
+/* ========== FOOTER ICONS ========== */
+footer ul li a i {
+  font-size: 2.0rem !important;   /* 明显变大 */
+}
+
+footer ul {
+  gap: 22px !important;
+  padding: 2rem 0 !important;
+}
+
+/* ========== LANDING PAGE IMAGE ========== */
+/* 只放大首页右侧图片 */
+img {
+  max-width: 520px !important;
+  height: auto !important;
+}
+
+/* ===== Make landing page image column wider ===== */
+.landing-page-image{
+  width: 35% !important;     /* 原来是 30%，你可以改成 40–50% */
+}
+
+/* 同时让文字列对应缩小，避免换行挤压 */
+.landing-page-content{
+  width: 58% !important;
+}
+
+/* 让图片在容器里真正占满 */
+.landing-page-image img{
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+}

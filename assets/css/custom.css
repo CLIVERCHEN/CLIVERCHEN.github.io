@@ -1,0 +1,49 @@
+/* =========================
+   Footer social icons
+   ========================= */
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;           /* 图标间距 */
+  padding: 1.5rem 0;
+  margin: 0;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  font-size: 2.0rem;   /* 🔥 图标大小（推荐 1.4–1.8） */
+  color: #333;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer ul li a:hover {
+  transform: scale(1.15);
+  color: #000;
+}
+
+/* =========================
+   Landing page image
+   ========================= */
+
+/* 控制首页整体宽度（让图片区域更大） */
+.main {
+  max-width: 1100px;   /* 默认通常 ~900 */
+}
+
+/* 放大首页照片 */
+img {
+  max-width: 420px;    /* 🔥 图片最大宽度 */
+  height: auto;
+}
+
+/* 桌面端再大一点 */
+@media (min-width: 900px) {
+  img {
+    max-width: 480px;
+  }
+}
+
