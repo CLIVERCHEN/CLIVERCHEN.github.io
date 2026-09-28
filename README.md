@@ -19,7 +19,7 @@ Open http://localhost:1313/. Build the site with `hugo`; the output is `public/`
 - `data/publications.yaml`: titles, authors, venues, one-sentence TL;DRs, and paper links.
 - `layouts/index.html`: education and reviewer service.
 - `scripts/prepare_photos.py`: curated photo order, captions and homepage selection.
-- `scripts/build_cv.py`: two-page academic CV, sharing paper data with the homepage. Requires ReportLab, PyYAML, and Trebuchet MS fonts (`--font-dir` selects their directory). Generates `output/pdf/Keru_Chen_CV.pdf`; copy the reviewed output to `static/CV.pdf` to publish it.
+- `scripts/build_cv.py`: two-page CV for research internship applications, sharing paper data with the homepage. Uses a formal black-and-white Times New Roman layout. Requires ReportLab, PyYAML, and Times New Roman fonts (`--font-dir` selects their directory). Generates `output/pdf/Keru_Chen_CV.pdf`; copy the reviewed output to `static/CV.pdf` to publish it.
 - `docs/CONTENT_SOURCES.md`: factual sources and venue/year corrections.
 
 To regenerate the photo derivatives after adding photographs, install Pillow in your Python environment and run `python3 scripts/prepare_photos.py`. Existing derivatives are reused when the original is unchanged. Originals are retained under `static/img/photography/`; only web derivatives are published. The gallery includes 18 selected photographs and a collapsible archive. The lightbox supports arrow keys, Escape, swipe, and reduced motion, and links still open the image when JavaScript is unavailable.

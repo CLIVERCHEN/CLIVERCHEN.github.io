@@ -43,4 +43,6 @@ The user confirmed IEEE/ACM Transactions on Networking as an additional reviewer
 
 ## CV update
 
+The subsequent internship-focused revision uses Times New Roman in a black-and-white layout, placing relevant research experience and technical skills on page one and the complete paper list on page two. Research bullets derive from the same paper descriptions used on the homepage; no performance figures or additional tools were invented. Language-test details were omitted to prioritize relevant technical experience. The user requested a more formal template for internship applications.
+
 The CV was revised using the existing PDF for prior research experience, projects, awards, skills, and GPA, and the verified homepage data for publications and research interests. On 28 September 2026, the user confirmed the Houston internship ended in July 2025, the Westlake internship was a single summer (Summer 2024, retaining the original start year), and GPA was not to be updated. The revised CV preserves the original GPA values, separates the MeshHeal preprint from accepted publications, and adds the user-supplied reviewer service and collaborators. Prior project and internship accomplishments are inherited from the original CV rather than newly independently verified.
