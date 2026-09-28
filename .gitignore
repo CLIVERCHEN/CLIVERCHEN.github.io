@@ -1,0 +1,9 @@
+.DS_Store
+.hugo_build.lock
+public/
+resources/
+.legacy-hugo-20260928/
+src/
+static/img/photography/
+__pycache__/
+*.pyc

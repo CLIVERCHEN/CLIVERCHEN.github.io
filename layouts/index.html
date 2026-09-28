@@ -1,0 +1,54 @@
+{{ define "main" }}
+<section id="about" class="content-section about-section">
+  <p class="eyebrow">Reinforcement learning · Language models</p>
+  <h2>About me</h2>
+  <div class="about-copy">{{ .Content }}</div>
+</section>
+
+<section id="news" class="content-section">
+  <div class="section-heading"><h2>News</h2><span class="section-aside">Since Aug 2025</span></div>
+  <ol class="news-list">
+  {{ range sort .Site.Data.news "date" "desc" }}
+    <li><time class="news-date" datetime="{{ .date }}">{{ time.Format "Jan 2006" (printf "%s-01" .date) }}</time><div>{{ with .emoji }}<span class="news-emoji" aria-hidden="true">{{ . }}</span> {{ end }}{{ .text | markdownify }}</div></li>
+  {{ end }}
+  </ol>
+</section>
+
+<section id="publications" class="content-section">
+  <div class="section-heading"><h2>Publications</h2><a class="quiet-link" href="{{ .Site.Params.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
+  <div class="publications-list">
+  {{ range .Site.Data.publications }}
+    <article class="paper-box" id="{{ .id }}">
+      <div class="paper-box-meta"><span class="paper-venue{{ if eq .venue "Preprint" }} paper-venue--preprint{{ end }}">{{ .venue }}</span><span class="paper-year">{{ .year }}</span></div>
+      <div class="paper-box-text">
+        <h3><a href="{{ .paper }}">{{ .title }}</a></h3>
+        <p class="paper-authors">{{ .authors | markdownify }}</p>
+        {{ with .note }}<p class="paper-note">{{ . }}</p>{{ end }}
+        <p class="paper-tldr"><span>TL;DR</span> {{ .tldr }}</p>
+        <div class="paper-links"><a href="{{ .paper }}" aria-label="Paper: {{ .title }}">Paper <span aria-hidden="true">↗</span></a><a href="{{ .pdf }}" aria-label="Full text: {{ .title }}">{{ if eq .id "fpm" }}Full text{{ else }}PDF{{ end }}</a></div>
+      </div>
+    </article>
+  {{ end }}
+  </div>
+</section>
+
+<section id="education" class="content-section">
+  <h2>Education</h2>
+  <div class="education-row"><span class="education-year">2025–present</span><div><h3>Arizona State University</h3><p>PhD in Electrical Engineering <span class="education-detail">· Advisor: Shaofeng Zou</span></p></div></div>
+  <div class="education-row"><span class="education-year">2021–2025</span><div><h3>Xi’an Jiaotong University</h3><p>B.Eng. in Automation</p></div></div>
+</section>
+
+<section id="service" class="content-section service-section">
+  <h2>Service</h2>
+  <div class="service-row"><span class="service-role">Reviewer</span><p>NeurIPS 2026 <span aria-hidden="true">·</span> ICLR 2027 <span aria-hidden="true">·</span> Scientific Reports <span aria-hidden="true">·</span> IEEE/ACM Transactions on Networking</p></div>
+</section>
+
+<section id="photography" class="content-section photography-section">
+  <div class="section-heading"><h2>Photography</h2><a class="quiet-link" href="{{ "/photography/" | relURL }}">View gallery <span aria-hidden="true">↗</span></a></div>
+  <p class="section-intro">Away from my desk, I like to photograph landscapes, cities, and the night sky.</p>
+  <div class="photo-triptych">
+    {{ range where .Site.Data.photos "home" true }}{{ partial "photo.html" . }}{{ end }}
+  </div>
+  <p class="gallery-hint">A few recent favorites. Click a photograph to take a closer look.</p>
+</section>
+{{ end }}

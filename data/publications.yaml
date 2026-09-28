@@ -1,0 +1,47 @@
+- id: meshheal
+  title: "MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks"
+  authors: "**Keru Chen**, Sen Lin, Yingbin Liang, Nathaniel D. Bastian, Shaofeng Zou"
+  venue: "Preprint"
+  year: 2026
+  tldr: "Peer review catches unreliable agent outputs, while longer-term monitoring guides exclusion and recovery."
+  paper: "https://arxiv.org/abs/2609.29015"
+  pdf: "https://arxiv.org/pdf/2609.29015"
+
+- id: ids
+  title: "Information-Directed Offline-to-Online Reinforcement Learning"
+  authors: "**Keru Chen**"
+  venue: "NeurIPS"
+  year: 2026
+  note: "Main Conference · Also at ICML 2026 DEMO Workshop"
+  tldr: "Direct online exploration toward the uncertainty that remains after learning from offline data."
+  paper: "https://arxiv.org/abs/2605.29405"
+  pdf: "https://arxiv.org/pdf/2605.29405"
+
+- id: hipo
+  title: "HIPO: Instruction Hierarchy via Constrained Reinforcement Learning"
+  authors: "**Keru Chen**, Jun Luo, Sen Lin, Yingbin Liang, Alvaro Velasquez, Nathaniel Bastian, Shaofeng Zou"
+  venue: "EMNLP"
+  year: 2026
+  note: "Main Conference"
+  tldr: "Train language models to help users while treating system-instruction compliance as an explicit constraint."
+  paper: "https://arxiv.org/abs/2603.16152"
+  pdf: "https://arxiv.org/pdf/2603.16152"
+
+- id: marvel
+  title: "Towards Fast Safe Online Reinforcement Learning via Policy Finetuning"
+  authors: "**Keru Chen**, Honghao Wei, Zhigang Deng, Sen Lin"
+  venue: "TMLR"
+  year: 2026
+  tldr: "Align value estimates and adapt constraint penalties to safely fine-tune offline policies online."
+  paper: "https://openreview.net/forum?id=1SO7vmLFUq"
+  pdf: "https://arxiv.org/pdf/2412.04426"
+
+- id: fpm
+  title: "Fourier Ptychographic Microscopy 10 Years On: A Review"
+  authors: "F. Xu, Z. Wu, C. Tan, Y. Liao, Z. Wang, **Keru Chen**, An Pan"
+  venue: "Cells"
+  year: 2024
+  note: "13(4), 324"
+  tldr: "A review of computational microscopy, from image reconstruction to digital pathology and deep learning."
+  paper: "https://doi.org/10.3390/cells13040324"
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10887115/"

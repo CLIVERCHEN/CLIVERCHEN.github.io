@@ -1,65 +1,23 @@
-baseURL = "https://CLIVERCHEN.github.io/"
+baseURL = "https://cliverchen.github.io/"
 languageCode = "en-us"
 title = "Keru Chen"
-theme = "barks"
-
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.128.0"
-
-[menu]
-
-[[menu.main]]
-name = "Research"
-url = "/research/"
-weight = 1
-
-[[menu.main]]
-name = "Publications"
-url = "/publications/"
-weight = 2
-
-[[menu.main]]
-name = "Experience"
-url = "/experience/"
-weight = 3
-
-[[menu.main]]
-name = "CV"
-url = "/cv/"
-weight = 4
-
-[[menu.main]]
-name = "Contact"
-url = "/contact/"
-weight = 5
+theme = "acad-homepage"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
-customCSS = ["css/custom.css"]
+description = "Keru Chen is a PhD student at Arizona State University working on reinforcement learning, LLM post-training, safety, and alignment."
+scholar = "https://scholar.google.com/citations?user=W0LexmIAAAAJ&hl=en"
+email = "kchen234@asu.edu"
 
+[module]
+  [[module.mounts]]
+  source = "static"
+  target = "static"
+  excludeFiles = ["img/photography/**", "css/**", "js/**"]
 
-[[params.social]]
-name = "Email"
-url = "mailto:kchen234@asu.edu"
-class = "fa-solid fa-envelope"
-weight = 1
+[markup.goldmark.renderer]
+unsafe = true
 
-[[params.social]]
-name = "GitHub"
-url = "https://github.com/CLIVERCHEN"
-class = "fa-brands fa-github"
-weight = 2
-
-[[params.social]]
-name = "Google Scholar"
-url = "https://scholar.google.com/citations?user=W0LexmIAAAAJ&hl=en"
-class = "fa-solid fa-graduation-cap"
-weight = 3
-
-[[params.social]]
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/keru-chen-23ba0128a/"
-class = "fa-brands fa-linkedin"
-weight = 4
-
+[build]
+noJSConfigInAssets = true

@@ -1,0 +1,5 @@
+name = "AcadHomepage for Hugo"
+license = "MIT"
+licenselink = "https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE"
+description = "Hugo adaptation of Yi Ren’s AcadHomepage"
+homepage = "https://github.com/RayeRen/acad-homepage.github.io"

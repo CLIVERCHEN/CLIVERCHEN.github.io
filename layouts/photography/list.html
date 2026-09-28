@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="content-section gallery-section">
+  <a class="quiet-link back-link" href="{{ "/#photography" | relURL }}">← Back to homepage</a>
+  <p class="eyebrow">Outside of research</p>
+  <h2>Photography</h2>
+  <div class="section-intro">{{ .Content }}</div>
+  <div class="gallery-grid">
+    {{ range where .Site.Data.photos "selected" true }}{{ partial "photo.html" . }}{{ end }}
+  </div>
+  {{ $archive := where .Site.Data.photos "selected" false }}
+  {{ with $archive }}
+  <details class="photo-archive">
+    <summary>More photographs <span>{{ len . }} from the archive</span></summary>
+    <div class="gallery-grid">{{ range . }}{{ partial "photo.html" . }}{{ end }}</div>
+  </details>
+  {{ end }}
+</section>
+{{ end }}

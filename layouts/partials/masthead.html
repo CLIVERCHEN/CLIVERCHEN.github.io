@@ -1,0 +1,13 @@
+{{/* Adapted from AcadHomepage's masthead.html. */}}
+<header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-name" href="{{ "/" | relURL }}">Keru Chen<span class="name-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="{{ "/#about" | relURL }}" data-section="about">About</a>
+      <a href="{{ "/#news" | relURL }}" data-section="news">News</a>
+      <a href="{{ "/#publications" | relURL }}" data-section="publications">Publications</a>
+      <a href="{{ "/#service" | relURL }}" data-section="service">Service</a>
+      <a href="{{ "/photography/" | relURL }}" {{ if eq .Section "photography" }}aria-current="page"{{ end }}>Photography</a>
+    </nav>
+  </div>
+</header>

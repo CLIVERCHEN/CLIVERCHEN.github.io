@@ -1,0 +1,22 @@
+{{/* Profile hierarchy and classes adapted from AcadHomepage. */}}
+<aside class="sidebar sticky" aria-label="Profile">
+  <div class="profile_box">
+    <a class="author__avatar" href="{{ "/" | relURL }}" aria-label="Keru Chen, homepage">
+      <img src="{{ "media/profile/avatar.webp" | relURL }}" width="320" height="320" alt="Keru Chen" fetchpriority="high">
+    </a>
+    <div class="author__content">
+      <h1 class="author__name">Keru Chen <span lang="zh">陈科儒</span></h1>
+      <p class="author__bio">PhD Student<br>Electrical Engineering</p>
+      <a class="author__institution" href="https://www.asu.edu/">Arizona State University</a>
+      <p class="author__location">Tempe, Arizona</p>
+    </div>
+  </div>
+  <ul class="author__urls">
+    <li><a href="mailto:{{ .Site.Params.email }}">{{ partial "icon.html" "mail" }}<span>Email</span></a></li>
+    <li><a href="{{ .Site.Params.scholar }}">{{ partial "icon.html" "scholar" }}<span>Google Scholar</span></a></li>
+    <li><a href="https://github.com/CLIVERCHEN">{{ partial "icon.html" "github" }}<span>GitHub</span></a></li>
+    <li><a href="https://www.linkedin.com/in/keru-chen-23ba0128a/">{{ partial "icon.html" "linkedin" }}<span>LinkedIn</span></a></li>
+    <li><a href="{{ "CV.pdf" | relURL }}">{{ partial "icon.html" "file" }}<span>Curriculum Vitae</span></a></li>
+  </ul>
+
+</aside>

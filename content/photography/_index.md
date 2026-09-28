@@ -1,5 +1,6 @@
 ---
 title: "Photography"
+description: "Photographs by Keru Chen: landscapes, city scenes, and the night sky."
 ---
 
-Photography is a personal side project of mine.  
+Landscapes, cities, and the night sky. A few things I stop to look at outside of research.

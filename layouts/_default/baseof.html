@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Keru Chen</title>
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+  <meta name="author" content="Keru Chen">
+  <meta name="theme-color" content="#fbfbf9">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} · {{ end }}Keru Chen">
+  <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ "media/profile/avatar.webp" | absURL }}">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+  {{ $css := resources.Get "scss/main.scss" | css.Sass (dict "targetPath" "css/main.css" "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $js := resources.Get "js/site.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "masthead.html" . }}
+  <div class="site-shell">
+    {{ partial "author-profile.html" . }}
+    <main id="main" class="page" tabindex="-1">
+      {{ block "main" . }}{{ end }}
+      <footer class="site-footer">
+        <span>© {{ now.Year }} Keru Chen</span>
+        <span>Based on <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a></span>
+      </footer>
+    </main>
+  </div>
+  {{ partial "lightbox.html" . }}
+</body>
+</html>
