@@ -33,10 +33,14 @@ These pages informed structure and tone only. No accomplishments or biographical
 
 The body font now uses AcadHomepage's actual `$global-font-family`: `"Trebuchet MS", Helvetica, sans-serif`, defined in the preserved upstream `_variables.scss`. Headings, navigation and the profile inherit the same family.
 
-Research interests and reviewer service (Scientific Reports, NeurIPS 2026, ICLR 2027) were supplied by the user. Fall 2025 PhD start was supplied by the user. Advisor, degree, undergraduate institution, email, and profile links were carried over from the existing homepage; the 2021–2025 undergraduate dates also appear on the linked LinkedIn profile. The CV PDF is the existing file and was not rewritten.
+Research interests and reviewer service (Scientific Reports, NeurIPS 2026, ICLR 2027) were supplied by the user. Fall 2025 PhD start was supplied by the user. Advisor, degree, undergraduate institution, email, and profile links were carried over from the existing homepage; the 2021–2025 undergraduate dates also appear on the linked LinkedIn profile. The original CV was retained during the initial homepage redesign; see the CV update below for the subsequent revision.
 
 Photo captions describe visible subjects, without inferred dates or locations. Web derivatives omit EXIF metadata; camera originals remain in `static/img/photography/` and are excluded from the Hugo publish mount.
 
 The user subsequently added AI agents (including multi-agent systems) to their interests and stated that they work closely with Prof. Sen Lin and Prof. Yingbin Liang. Their homepage links were checked against https://slin70.github.io/ and https://sites.google.com/view/yingbinliang/home. The sentence highlighting two recent research projects was removed at the user's request.
 
 The user confirmed IEEE/ACM Transactions on Networking as an additional reviewer service entry.
+
+## CV update
+
+The CV was revised using the existing PDF for prior research experience, projects, awards, skills, and GPA, and the verified homepage data for publications and research interests. On 28 September 2026, the user confirmed the Houston internship ended in July 2025, the Westlake internship was a single summer (Summer 2024, retaining the original start year), and GPA was not to be updated. The revised CV preserves the original GPA values, separates the MeshHeal preprint from accepted publications, and adds the user-supplied reviewer service and collaborators. Prior project and internship accomplishments are inherited from the original CV rather than newly independently verified.

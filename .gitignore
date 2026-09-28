@@ -7,3 +7,5 @@ src/
 static/img/photography/
 __pycache__/
 *.pyc
+tmp/
+output/
