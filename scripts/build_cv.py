@@ -85,6 +85,15 @@ story = [p('Keru Chen','name'),Spacer(1,4),
     p('Advisor: '+link('Prof. Shaofeng Zou','https://sites.google.com/view/szou/home'),'small'),Spacer(1,7),
     row("<b>Xi'an Jiaotong University</b>",'2021 - 2025'),
     p('BEng in Automation'),
+    heading('Publications & Preprints')]
+publications = yaml.safe_load((ROOT/'data/publications.yaml').read_text())
+story += [paper(x) for x in publications if x['id']!='meshheal']
+story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id']=='meshheal')),
+    heading('Technical Skills'),
+    p('<b>Programming:</b> Python, C/C++, MATLAB. &nbsp; <b>Deep learning:</b> PyTorch.'),
+    p('<b>LLM Frameworks:</b> Transformers, vLLM, verl.'),
+    p('<b>Tools:</b> Git/GitHub, Linux, LaTeX.'),
+    PageBreak(),
     heading('Research Experience'),
     experience('Arizona State University','Aug 2025 - Present','Doctoral Research | Prof. Shaofeng Zou',[
         'Formulated instruction hierarchy in LLMs as constrained RL (<b>HIPO; EMNLP&nbsp;2026</b>).',
@@ -97,13 +106,6 @@ story = [p('Keru Chen','name'),Spacer(1,4),
         'Applied reinforcement learning to fine-tune vision-language-action models for robotic manipulation.']),
     experience('University of North Carolina at Chapel Hill','Jan 2024 - May 2024','Research Intern | Prof. Tianlong Chen',[
         'Worked on time-series forecasting and security analysis of LLM and retrieval-augmented generation systems; contributed to research published at EMNLP 2024.']),
-    heading('Technical Skills'),
-    p('<b>Programming:</b> Python, C/C++, MATLAB. &nbsp; <b>Deep learning:</b> PyTorch.'),
-    p('<b>Tools:</b> Git/GitHub, Linux, LaTeX.'),
-    PageBreak(),heading('Publications')]
-publications = yaml.safe_load((ROOT/'data/publications.yaml').read_text())
-story += [paper(x) for x in publications if x['id']!='meshheal']
-story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id']=='meshheal')),
     heading('Selected Projects'),
     experience('Biomedical Image Translation with GANs','2024','Research Project',[
         'Developed a multi-scale GAN for breast cancer cell image translation.',
