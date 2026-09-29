@@ -81,10 +81,10 @@ story = [p('Keru Chen','name'),Spacer(1,4),
     p('<b>Research focus:</b> Reinforcement learning, LLM post-training, and AI agents, including multi-agent systems; safety, alignment, and constrained decision-making, with interest in healthcare applications.'),
     heading('Education'),
     row('<b>Arizona State University</b>','Aug 2025 - Present'),
-    row('PhD in Electrical Engineering','GPA: 3.89 / 4.00'),
+    p('PhD in Electrical Engineering'),
     p('Advisor: '+link('Prof. Shaofeng Zou','https://sites.google.com/view/szou/home'),'small'),Spacer(1,7),
     row("<b>Xi'an Jiaotong University</b>",'2021 - 2025'),
-    row('BEng in Automation','GPA: 3.5 / 4.3'),
+    p('BEng in Automation'),
     heading('Research Experience'),
     experience('Arizona State University','Aug 2025 - Present','Doctoral Research | Prof. Shaofeng Zou',[
         'Formulated instruction hierarchy in LLMs as constrained RL (<b>HIPO; EMNLP&nbsp;2026</b>).',
@@ -104,9 +104,6 @@ story = [p('Keru Chen','name'),Spacer(1,4),
 publications = yaml.safe_load((ROOT/'data/publications.yaml').read_text())
 story += [paper(x) for x in publications if x['id']!='meshheal']
 story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id']=='meshheal')),
-    heading('Additional Research Experience'),
-    experience('Chinese Academy of Sciences','Feb 2023 - Oct 2023',"Research Intern | Prof. An Pan | Xi'an, China",[
-        'Worked on computational imaging and Fourier ptychographic microscopy; co-authored a review published in Cells.']),
     heading('Selected Projects'),
     experience('Biomedical Image Translation with GANs','2024','Research Project',[
         'Developed a multi-scale GAN for breast cancer cell image translation.',
