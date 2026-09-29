@@ -106,12 +106,6 @@ story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id
         'Applied reinforcement learning to fine-tune vision-language-action models for robotic manipulation.']),
     experience('University of North Carolina at Chapel Hill','Jan 2024 - May 2024','Research Intern | Prof. Tianlong Chen',[
         'Worked on time-series forecasting and security analysis of LLM and retrieval-augmented generation systems; contributed to research published at EMNLP 2024.']),
-    heading('Selected Projects'),
-    experience('Biomedical Image Translation with GANs','2024','Research Project',[
-        'Developed a multi-scale GAN for breast cancer cell image translation.',
-        'National Second Prize, National Biomedical Engineering Innovation Design Competition.']),
-    experience('Waveformer: EEG Sleep Stage Classification','2023','Research Project',[
-        'Built a transformer-based model combining wavelet transforms and deep learning for EEG sleep stage classification; code available on GitHub.']),
     heading('Academic Service'),
     p('<b>Conference Reviewer:</b> NeurIPS 2026; ICLR 2027.'),
     p('<b>Journal Reviewer:</b> Scientific Reports; IEEE/ACM Transactions on Networking.'),

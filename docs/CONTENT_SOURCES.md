@@ -50,3 +50,5 @@ The CV was revised using the existing PDF for prior research experience, project
 On 29 September 2026, the user requested removing both GPA entries and the entire Additional Research Experience section from the CV. The main research experience and publications remain.
 
 The user approved the revised page order: Education, Publications & Preprints, and Technical Skills on page one; Research Experience, Selected Projects, and Academic Service on page two. The user explicitly confirmed experience with Transformers, vLLM, and verl; these are the only added LLM frameworks.
+
+The user subsequently requested removal of the entire Selected Projects section. The CV now has research experience followed directly by academic service on page two.
