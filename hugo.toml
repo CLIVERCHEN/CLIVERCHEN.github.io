@@ -10,6 +10,10 @@ description = "Keru Chen is a PhD student at Arizona State University working on
 scholar = "https://scholar.google.com/citations?user=W0LexmIAAAAJ&hl=en"
 email = "kchen234@asu.edu"
 
+[params.visitors]
+statsURL = "https://mapmyvisitors.com/web/1c8jy"
+scriptURL = "https://mapmyvisitors.com/map.js?cl=d8dfe1&w=a&t=tt&d=bV9mh9aUOFRkNT1-bmByHbZURREPyTAwd3HY1DmZn4c&co=fbfbf9&ct=6c777d&cmo=32627a&cmn=b87852"
+
 [module]
   [[module.mounts]]
   source = "static"

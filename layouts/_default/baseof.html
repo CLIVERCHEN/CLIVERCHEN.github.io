@@ -25,6 +25,7 @@
     {{ partial "author-profile.html" . }}
     <main id="main" class="page" tabindex="-1">
       {{ block "main" . }}{{ end }}
+      {{ if .IsHome }}{{ partial "visitors.html" . }}{{ end }}
       <footer class="site-footer">
         <span>© {{ now.Year }} Keru Chen</span>
         <span>Based on <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a></span>

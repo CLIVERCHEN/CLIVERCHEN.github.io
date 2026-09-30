@@ -1,0 +1,15 @@
+{{ with .Site.Params.visitors }}
+  {{ if and .scriptURL .statsURL }}
+  <aside id="visitors" class="visitor-map" aria-label="Visitor map">
+    <div class="visitor-map-heading"><span>Visitors around the world</span><a href="{{ .statsURL }}" target="_blank" rel="noopener noreferrer">View map <span aria-hidden="true">↗</span></a></div>
+    <div class="visitor-map-widget">
+      {{ if hugo.IsServer }}
+      <p class="visitor-map-note">Visitor statistics are enabled on the live website.</p>
+      {{ else }}
+      <script id="mapmyvisitors" src="{{ .scriptURL | safeURL }}" async></script>
+      <noscript><a href="{{ .statsURL }}">View visitor statistics on MapMyVisitors</a></noscript>
+      {{ end }}
+    </div>
+  </aside>
+  {{ end }}
+{{ end }}

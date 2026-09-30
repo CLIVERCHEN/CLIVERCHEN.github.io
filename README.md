@@ -29,3 +29,7 @@ To regenerate the photo derivatives after adding photographs, install Pillow in 
 The previous Hugo layouts, content, configuration and instructions are preserved in `.legacy-hugo-20260928/`. They are not part of the active build. The original `barks` theme remains on disk but is no longer selected. This workspace was not a Git checkout when the redesign began.
 
 The adapted template's license and provenance are under `themes/acad-homepage/`.
+
+## Visitor map
+
+The homepage footer uses the user-authorized MapMyVisitors widget. Its public statistics and embed URLs are configured under `[params.visitors]` in `hugo.toml`. The map is loaded asynchronously on the homepage only. Hugo server previews omit the tracker to avoid counting development visits. Remove this configuration to disable the widget. Statistics begin at installation; they cannot recover earlier visits.
