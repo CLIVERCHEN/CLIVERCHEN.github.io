@@ -52,3 +52,9 @@ On 29 September 2026, the user requested removing both GPA entries and the entir
 The user approved the revised page order: Education, Publications & Preprints, and Technical Skills on page one; Research Experience, Selected Projects, and Academic Service on page two. The user explicitly confirmed experience with Transformers, vLLM, and verl; these are the only added LLM frameworks.
 
 The user subsequently requested removal of the entire Selected Projects section. The CV now has research experience followed directly by academic service on page two.
+
+## 14 October 2026 update
+
+Added *Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards* (CoSIR) to the homepage and CV. Title, authors, preprint status, and 13 October submission date were checked against https://arxiv.org/abs/2610.17893. The TL;DR follows the author's requested emphasis on collaboration-oriented post-training, a verifiable toy environment, surprisal-reduction rewards, and transfer to out-of-distribution collaboration benchmarks, consistent with the abstract.
+
+The author reported receiving OpenAI Researcher Access Program support. News and the CV use October 2026 as the announcement month; the exact selection date and amount of support were not supplied. No amount is claimed.

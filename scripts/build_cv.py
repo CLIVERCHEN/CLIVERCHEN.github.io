@@ -62,6 +62,7 @@ def paper(pub):
         'marvel': 'Transactions on Machine Learning Research (TMLR), 2026.',
         'fpm': 'Cells, 13(4), 324, 2024.',
         'meshheal': 'arXiv:2609.29015, 2026.',
+        'cosir': 'arXiv:2610.17893, 2026.',
     }[pub['id']]
     return KeepTogether([p(link(pub['title'],pub['paper']),'paper'),Spacer(1,2),p(authors,'small'),p(venue,'small'),Spacer(1,9)])
 
@@ -71,7 +72,7 @@ def footer(canvas, doc):
     canvas.line(46,37,566,37)
     canvas.setFont('CV',8)
     canvas.setFillColor(MUTED)
-    canvas.drawString(46,24,'Keru Chen | Curriculum Vitae | Updated September 2026')
+    canvas.drawString(46,24,'Keru Chen | Curriculum Vitae | Updated October 2026')
     canvas.drawRightString(566,24,f'{doc.page} / 2')
 
 story = [p('Keru Chen','name'),Spacer(1,4),
@@ -87,8 +88,10 @@ story = [p('Keru Chen','name'),Spacer(1,4),
     p('BEng in Automation'),
     heading('Publications & Preprints')]
 publications = yaml.safe_load((ROOT/'data/publications.yaml').read_text())
-story += [paper(x) for x in publications if x['id']!='meshheal']
-story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id']=='meshheal')),
+story += [paper(x) for x in publications if x['venue']!='Preprint']
+story += [p('Preprints','subsection')]
+story += [paper(x) for x in publications if x['venue']=='Preprint']
+story += [
     heading('Technical Skills'),
     p('<b>Programming:</b> Python, C/C++, MATLAB. &nbsp; <b>Deep learning:</b> PyTorch.'),
     p('<b>LLM Frameworks:</b> Transformers, vLLM, verl.'),
@@ -96,6 +99,7 @@ story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id
     PageBreak(),
     heading('Research Experience'),
     experience('Arizona State University','Aug 2025 - Present','Doctoral Research | Prof. Shaofeng Zou',[
+        'Post-trained LLMs for collaboration using surprisal-reduction rewards in a verifiable toy environment, improving performance on out-of-distribution collaboration benchmarks (<b>CoSIR; preprint</b>).',
         'Formulated instruction hierarchy in LLMs as constrained RL (<b>HIPO; EMNLP&nbsp;2026</b>).',
         'Developed information-directed exploration for offline-to-online RL (<b>NeurIPS&nbsp;2026</b>).',
         'Studied peer review and two-timescale monitoring to detect unreliable outputs and guide recovery in decentralized LLM agent networks (<b>MeshHeal; preprint</b>).',
@@ -106,6 +110,8 @@ story += [p('Preprint','subsection'),paper(next(x for x in publications if x['id
         'Applied reinforcement learning to fine-tune vision-language-action models for robotic manipulation.']),
     experience('University of North Carolina at Chapel Hill','Jan 2024 - May 2024','Research Intern | Prof. Tianlong Chen',[
         'Worked on time-series forecasting and security analysis of LLM and retrieval-augmented generation systems; contributed to research published at EMNLP 2024.']),
+    heading('Research Support'),
+    row('<b>OpenAI Researcher Access Program</b>','Oct 2026'),
     heading('Academic Service'),
     p('<b>Conference Reviewer:</b> NeurIPS 2026; ICLR 2027.'),
     p('<b>Journal Reviewer:</b> Scientific Reports; IEEE/ACM Transactions on Networking.'),

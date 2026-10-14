@@ -1,3 +1,12 @@
+- id: cosir
+  title: "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards"
+  authors: "**Keru Chen**, Sen Lin, Yingbin Liang, Nathaniel D. Bastian, Shaofeng Zou"
+  venue: "Preprint"
+  year: 2026
+  tldr: "Post-train LLMs for collaboration with surprisal-reduction rewards in a verifiable toy environment, improving performance on out-of-distribution collaboration benchmarks."
+  paper: "https://arxiv.org/abs/2610.17893"
+  pdf: "https://arxiv.org/pdf/2610.17893"
+
 - id: meshheal
   title: "MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks"
   authors: "**Keru Chen**, Sen Lin, Yingbin Liang, Nathaniel D. Bastian, Shaofeng Zou"
